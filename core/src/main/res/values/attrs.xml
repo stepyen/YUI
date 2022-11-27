@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="YClearEditText">
+        <!--清除按钮的图片资源-->
+        <attr name="cet_clearIcon" format="reference" />
+
+        <!--清除按钮的图片宽-->
+        <attr name="cet_clearIconWidth" format="dimension" />
+        <attr name="cet_clearIconHeight" format="dimension" />
+
+    </declare-styleable>
+
+</resources>
