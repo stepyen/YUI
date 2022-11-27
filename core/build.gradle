@@ -46,8 +46,8 @@ dependencies {
     api "$library.androidx_fragment_ktx"
 
     // kotlin
-    api "$library.kotlin_stdlib_jdk7"
-    api "$library.kotlin_android_extensions_runtime"
+    compileOnly( "$library.kotlin_stdlib_jdk7")
+    compileOnly( "$library.kotlin_android_extensions_runtime")
 }
 
 

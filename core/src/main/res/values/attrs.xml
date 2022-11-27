@@ -2,7 +2,7 @@
 <resources>
 
 
-    <declare-styleable name="YClearEditText">
+    <declare-styleable name="YClearEditTextView">
         <!--清除按钮的图片资源-->
         <attr name="cet_clearIcon" format="reference" />
 

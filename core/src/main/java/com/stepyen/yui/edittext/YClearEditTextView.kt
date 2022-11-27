@@ -19,7 +19,7 @@ import kotlinx.android.synthetic.main.view_clear_edittext.view.*
  * description：
  *
  */
-class YClearEditText @JvmOverloads constructor(
+class YClearEditTextView @JvmOverloads constructor(
     private val mContext: Context,
     private val mAttrs: AttributeSet? = null,
     private val mDefStyleAttr: Int = 0
@@ -32,16 +32,16 @@ class YClearEditText @JvmOverloads constructor(
     }
 
     private fun init(context: Context, attrs: AttributeSet?) {
-        val ta = context.obtainStyledAttributes(attrs, R.styleable.YClearEditText, 0, 0)
+        val ta = context.obtainStyledAttributes(attrs, R.styleable.YClearEditTextView, 0, 0)
         ta.run {
 
-            var icon = getDrawable(R.styleable.YClearEditText_cet_clearIcon)
+            var icon = getDrawable(R.styleable.YClearEditTextView_cet_clearIcon)
             var iconWidth = getDimensionPixelSize(
-                R.styleable.YClearEditText_cet_clearIconWidth,
+                R.styleable.YClearEditTextView_cet_clearIconWidth,
                 DensityUtils.dp2px(18f)
             )
             var iconHeight = getDimensionPixelSize(
-                R.styleable.YClearEditText_cet_clearIconHeight,
+                R.styleable.YClearEditTextView_cet_clearIconHeight,
                 DensityUtils.dp2px(18f)
             )
 
@@ -94,7 +94,7 @@ class YClearEditText @JvmOverloads constructor(
                  * 当ClearEditText焦点发生变化的时候，判断里面字符串长度设置清除图标的显示与隐藏
                  */
                 if (hasFocus) {
-                    setClearIconVisible(this@YClearEditText.getText().isNotEmpty())
+                    setClearIconVisible(this@YClearEditTextView.getText().isNotEmpty())
                 } else {
                     setClearIconVisible(false)
                 }
@@ -116,7 +116,7 @@ class YClearEditText @JvmOverloads constructor(
                     s: CharSequence, start: Int, count: Int,
                     after: Int
                 ) {
-                    setClearIconVisible(this@YClearEditText.getText().isNotEmpty())
+                    setClearIconVisible(this@YClearEditTextView.getText().isNotEmpty())
                 }
             })
         }

@@ -15,7 +15,7 @@
        >
 
 
-       <com.stepyen.yui.edittext.YClearEditText
+       <com.stepyen.yui.edittext.YClearEditTextView
            android:id="@+id/testEt"
            android:layout_width="match_parent"
            android:layout_height="48dp"
