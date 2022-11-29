@@ -15,7 +15,7 @@ import java.lang.UnsupportedOperationException
 /**
  * 获取res中的资源
  */
-class ResUtils private constructor() {
+class YUIResUtils private constructor() {
 
     companion object {
         /**

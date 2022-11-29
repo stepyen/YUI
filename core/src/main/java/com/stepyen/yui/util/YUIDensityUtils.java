@@ -7,14 +7,14 @@ import android.util.DisplayMetrics;
 /**
  * 屏幕密度工具类
  */
-public final class DensityUtils {
+public final class YUIDensityUtils {
 
-    private DensityUtils() {
+    private YUIDensityUtils() {
         throw new UnsupportedOperationException("u can't instantiate me...");
     }
 
     private static Resources getResources() {
-        return ResUtils.Companion.getResources();
+        return YUIResUtils.Companion.getResources();
     }
 
     /**

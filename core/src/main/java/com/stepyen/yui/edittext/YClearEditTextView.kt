@@ -8,8 +8,8 @@ import android.view.View
 import android.view.View.OnFocusChangeListener
 import android.widget.*
 import com.stepyen.yui.R
-import com.stepyen.yui.util.DensityUtils
-import com.stepyen.yui.util.ResUtils
+import com.stepyen.yui.util.YUIDensityUtils
+import com.stepyen.yui.util.YUIResUtils
 import kotlinx.android.synthetic.main.view_clear_edittext.view.*
 
 
@@ -38,17 +38,17 @@ class YClearEditTextView @JvmOverloads constructor(
             var icon = getDrawable(R.styleable.YClearEditTextView_cet_clearIcon)
             var iconWidth = getDimensionPixelSize(
                 R.styleable.YClearEditTextView_cet_clearIconWidth,
-                DensityUtils.dp2px(18f)
+                YUIDensityUtils.dp2px(18f)
             )
             var iconHeight = getDimensionPixelSize(
                 R.styleable.YClearEditTextView_cet_clearIconHeight,
-                DensityUtils.dp2px(18f)
+                YUIDensityUtils.dp2px(18f)
             )
 
             recycle()
 
             if (icon == null) {
-                icon = ResUtils.Companion.getDrawable(R.drawable.yui_ic_default_clear_btn)
+                icon = YUIResUtils.Companion.getDrawable(R.drawable.yui_ic_default_clear_btn)
             }
             clearIv.setImageDrawable(icon)
             val lp = clearIv.layoutParams.apply {
@@ -86,7 +86,7 @@ class YClearEditTextView @JvmOverloads constructor(
 
         inputEt.apply {
 
-            setTextColor(ResUtils.getColor(R.color.black))
+            setTextColor(YUIResUtils.getColor(R.color.black))
 
             onFocusChangeListener = OnFocusChangeListener { v, hasFocus ->
 
