@@ -12,4 +12,9 @@
 
     </declare-styleable>
 
+
+    <declare-styleable name="YRadioGroupPlus">
+        <attr name="rgp_checkedButton" format="reference"></attr>
+    </declare-styleable>
+
 </resources>
